@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Asegurados</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <body background="fondo3.gif"></body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>
+        <output name="cue">
+          Asegurado
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </h1>
+      <div class="herramientas">
+        <a href="usuarios.html">
+          Cancelar</a>
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
+        </button>
+      </div>
+    </header>
+    <figure id="figure">
+      <img alt="Falta el Avatar">
+    </figure>
+    <p>
+      <label>
+        Avatar
+        <input name="avatar"
+          type="file"
+          accept=".png,.jpg,.jpeg,.gif">
+      </label>
+    </p>
+    <!--
+      Maneja una asociación a uno.
+    -->
+    <p>
+      <label>
+        Seguro
+        <select
+          name="SeguroId">
+          <option>
+            Cargando…
+          </option>
+        </select>
+      </label>
+    </p>
+    <!--
+      Maneja una asociación a
+      muchos.
+    -->
+    <fieldset>
+      <legend>Roles</legend>
+      <ul id="listaRoles"
+        class="checks">
+        <li>
+          <mi-progreso>
+          </mi-progreso>
+        </li>
+      </ul>
+    </fieldset>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAsegurado.js">
+    </script>
+</body>
+</html>

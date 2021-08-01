@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>
+    Agregar un Nuevo Seguro
+  </title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <body background="fondo2.gif"></body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Agregar Seguro nuevo</h1>
+      <div class="herramientas">
+        <a
+          href="Seguros.html">
+          Cancelar</a>
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Matricula
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre Seguros
+        <input name="nombres"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Auto
+        <input name="auto"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Modelo Automovil
+        <input name="modeloa"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Poliza
+        <input name="poliza"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Teléfono
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Correo
+        <input name="correo"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha
+        <input name="fecha"
+          type="date" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAgregarSeguro.js">
+    </script>
+</body>
+</html>
+
